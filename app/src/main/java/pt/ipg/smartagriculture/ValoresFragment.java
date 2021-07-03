@@ -109,21 +109,6 @@ public class ValoresFragment extends Fragment {
                         content += "Temperatura ºC: " + valores.get(i).getField3() + "\n";
                         content += "Monoxido de Carbono: " + valores.get(i).getField4() + "\n";
                         content += "Atuador: " + valores.get(i).getField5() + "\n";
-                      /*  x = Integer.parseInt(valores.get(i).getField5());
-                        Log.d("context", "" + getContext());
-                      if (x == 1) {
-                           AlertDialog.Builder alert = new AlertDialog.Builder(getContext());
-                          alert.setTitle("Estado da Rega");
-                          alert.setMessage("A rega está ligada!");
-                           alert.setPositiveButton("OK",null);
-                           alert.show();
-                       }else if (x == 0){
-                           AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
-                           alert.setTitle("Estado da Rega");
-                           alert.setMessage("A rega está desligada!");
-                           alert.setPositiveButton("OK",null);
-                           alert.show();
-                    }*/
                         content += "-------------------------------------------------------------"  + "\n";
                         textViewResult.append(content);
 
