@@ -15,19 +15,18 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import static pt.ipg.smartagriculture.NotificationView.CHANNEL_1_ID;
 
-public class MainActivity extends AppCompatActivity {
+public class NotMainAnymore extends AppCompatActivity {
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
 
     }
 
