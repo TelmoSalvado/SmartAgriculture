@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         android:text="Quer poupar água? \n Deixe connosco"
         android:textAlignment="center"
+        android:textColor="#686565"
         android:textSize="18sp"
         android:textStyle="bold" />
 

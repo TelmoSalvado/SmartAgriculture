@@ -16,11 +16,9 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
-import com.google.firebase.auth.FirebaseAuthUserCollisionException;
-import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
 import pt.ipg.smartagriculture.LoadingScreen;
-import pt.ipg.smartagriculture.MainActivity;
+import pt.ipg.smartagriculture.NotMainAnymore;
 import pt.ipg.smartagriculture.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -92,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void abrirInterfacePrincipal(){
-        startActivity(new Intent(this, MainActivity.class));
-        finish();
+        startActivity(new Intent(this, LoadingScreen.class));
+
     }
 }

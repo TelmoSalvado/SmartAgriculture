@@ -27,5 +27,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Simples e fácil de utilizar"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="#686565" />
 </LinearLayout>
