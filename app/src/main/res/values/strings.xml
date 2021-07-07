@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">SmartAgriculture</string>
+    <string name="Temperatura">Temperatura (ºC)</string>
+    <string name="Todos">Todos</string>
+    <string name="Solo">Humidade do Solo</string>
+    <string name="HumidadeAr">Humidade Ar (%)</string>
+    <string name="Monoxido">Monóxido de Carbono</string>
+    <string name="Luminosidade">Luminosidade</string>
+    <string name="Rega">Estado da Rega</string>
+    <string-array name="filtros">
+        <item>Todos</item>
+        <item>Temperatura (ºC)</item>
+        <item>Humidade do Solo</item>
+        <item>Humidade Ar (%)</item>
+        <item>Monóxido de Carbono</item>
+        <item>Luminosidade</item>
+        <item>Estado da Rega</item>
+    </string-array>
 </resources>

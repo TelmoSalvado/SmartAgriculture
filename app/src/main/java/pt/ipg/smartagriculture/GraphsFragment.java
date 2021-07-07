@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -42,6 +43,7 @@ public class GraphsFragment extends Fragment {
         Retrofit retrofit = new Retrofit.Builder().baseUrl("https://thingspeak.com").addConverterFactory(GsonConverterFactory.create()).build();
         jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
         GraphView graphView = view.findViewById(R.id.graph);
+
         final double[] y = new double[200];
         final double[] x = new double[200];
       /*  double[] x= new double[w];
@@ -58,7 +60,7 @@ public class GraphsFragment extends Fragment {
 
                 series = new LineGraphSeries<DataPoint>();
                 for ( w = 0; w < 3; w++) {
-                    for (int i = valores.size() - 1; i >= 99; i--) {
+                    for (int i = valores.size() - 1; i >= valores.size()-2 ; i--) {
                         String content = "";
                         content = valores.get(i).getField2();
                         x[w] = Double.parseDouble(content);
