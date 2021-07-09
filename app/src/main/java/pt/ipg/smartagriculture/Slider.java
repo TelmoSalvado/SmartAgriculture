@@ -1,4 +1,4 @@
-package pt.ipg.smartagriculture.gftsantos;
+package pt.ipg.smartagriculture;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +10,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
 import com.heinrichreimersoftware.materialintro.slide.FragmentSlide;
 
+import pt.ipg.smartagriculture.ConfiguracaoFirebase;
+import pt.ipg.smartagriculture.LoginActivity;
 import pt.ipg.smartagriculture.NotMainAnymore;
 import pt.ipg.smartagriculture.R;
+import pt.ipg.smartagriculture.RegistoActivity;
 
 public class Slider extends IntroActivity {
 

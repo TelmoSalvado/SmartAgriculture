@@ -1,4 +1,4 @@
-package pt.ipg.smartagriculture.gftsantos;
+package pt.ipg.smartagriculture;
 
 public class Utilizador {
 

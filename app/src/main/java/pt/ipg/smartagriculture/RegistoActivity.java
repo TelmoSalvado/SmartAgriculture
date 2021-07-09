@@ -1,4 +1,4 @@
-package pt.ipg.smartagriculture.gftsantos;
+package pt.ipg.smartagriculture;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,8 +16,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
-
-import pt.ipg.smartagriculture.R;
 
 public class RegistoActivity extends AppCompatActivity {
 

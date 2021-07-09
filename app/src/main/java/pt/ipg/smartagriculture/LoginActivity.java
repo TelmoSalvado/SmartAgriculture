@@ -1,4 +1,4 @@
-package pt.ipg.smartagriculture.gftsantos;
+package pt.ipg.smartagriculture;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,10 +16,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
-
-import pt.ipg.smartagriculture.LoadingScreen;
-import pt.ipg.smartagriculture.NotMainAnymore;
-import pt.ipg.smartagriculture.R;
 
 public class LoginActivity extends AppCompatActivity {
 
