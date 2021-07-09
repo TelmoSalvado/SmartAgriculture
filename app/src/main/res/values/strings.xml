@@ -7,6 +7,7 @@
     <string name="Monoxido">Monóxido de Carbono</string>
     <string name="Luminosidade">Luminosidade</string>
     <string name="Rega">Estado da Rega</string>
+    <string name="TH">Temperatura e Humidade</string>
     <string-array name="filtros">
         <item>Todos</item>
         <item>Temperatura (ºC)</item>
@@ -15,5 +16,16 @@
         <item>Monóxido de Carbono</item>
         <item>Luminosidade</item>
         <item>Estado da Rega</item>
+    </string-array>
+
+    <string-array name="filtrosGraphs">
+        <item>Todos</item>
+        <item>Temperatura (ºC)</item>
+        <item>Humidade do Solo</item>
+        <item>Humidade Ar (%)</item>
+        <item>Monóxido de Carbono</item>
+        <item>Luminosidade</item>
+        <item>Estado da Rega</item>
+        <item>Temperatura e Humidade</item>
     </string-array>
 </resources>
