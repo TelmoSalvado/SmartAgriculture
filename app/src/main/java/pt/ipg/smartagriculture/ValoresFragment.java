@@ -76,7 +76,7 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                          String content = "";
                          content += " " + "\n";
                          content += "Data: " + valores.get(i).getCreatedAt() + "\n";
-                         content += "ID: " + valores.get(i).getEntryId() + "\n";
+                        // content += "ID: " + valores.get(i).getEntryId() + "\n";
                          content += "Humidade Solo: " + valores.get(i).getField1() + "\n";
                          content += "Humidade Ar (%): " + valores.get(i).getField2() + "\n";
                          content += "Temperatura ºC: " + valores.get(i).getField3() + "\n";
@@ -106,7 +106,7 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                          String content = "";
                          content += " " + "\n";
                          content += "Data: " + valores.get(i).getCreatedAt() + "\n";
-                         content += "ID: " + valores.get(i).getEntryId() + "\n";
+                        // content += "ID: " + valores.get(i).getEntryId() + "\n";
                          content += "Temperatura ºC: " + valores.get(i).getField3() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
@@ -131,7 +131,7 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                          String content = "";
                          content += " " + "\n";
                          content += "Data: " + valores.get(i).getCreatedAt() + "\n";
-                         content += "ID: " + valores.get(i).getEntryId() + "\n";
+                       //  content += "ID: " + valores.get(i).getEntryId() + "\n";
                          content += "Humidade do Solo: " + valores.get(i).getField1() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
@@ -155,7 +155,7 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                          String content = "";
                          content += " " + "\n";
                          content += "Data: " + valores.get(i).getCreatedAt() + "\n";
-                         content += "ID: " + valores.get(i).getEntryId() + "\n";
+                        // content += "ID: " + valores.get(i).getEntryId() + "\n";
                          content += "Humidade Ar (%): " + valores.get(i).getField2() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
@@ -179,7 +179,7 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                          String content = "";
                          content += " " + "\n";
                          content += "Data: " + valores.get(i).getCreatedAt() + "\n";
-                         content += "ID: " + valores.get(i).getEntryId() + "\n";
+                         //content += "ID: " + valores.get(i).getEntryId() + "\n";
                          content += "Monoxido de Carbono: " + valores.get(i).getField4() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
@@ -203,7 +203,7 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                          String content = "";
                          content += " " + "\n";
                          content += "Data: " + valores.get(i).getCreatedAt() + "\n";
-                         content += "ID: " + valores.get(i).getEntryId() + "\n";
+                         //content += "ID: " + valores.get(i).getEntryId() + "\n";
                          content += "Luminosidade:" + valores.get(i).getField6() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
@@ -227,7 +227,7 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                          String content = "";
                          content += " " + "\n";
                          content += "Data: " + valores.get(i).getCreatedAt() + "\n";
-                         content += "ID: " + valores.get(i).getEntryId() + "\n";
+                        // content += "ID: " + valores.get(i).getEntryId() + "\n";
                          content += "Atuador: " + valores.get(i).getField5() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
