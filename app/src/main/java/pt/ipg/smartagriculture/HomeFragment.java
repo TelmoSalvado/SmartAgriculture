@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.se.omapi.Channel;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -38,7 +40,7 @@ public class HomeFragment extends Fragment {
     WebView webView;
     int width = 450;
     int height = 260;
-
+    int n = 0;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -98,21 +100,75 @@ public class HomeFragment extends Fragment {
                 Feeds body = response.body();
                 List<Valores> valores = body.getvalor();
                 valores.size();
-
+                for (int i = valores.size() -1; i>= valores.size() - 15; i--){
+                    int rega = Integer.parseInt(valores.get(i).getField5());
+                    if (rega == 1){
+                        n++;
+                    }
+                }
                 for (int i = valores.size() - 1; i >= valores.size() - 1; i--) {
                     x = Integer.parseInt(valores.get(i).getField5());
-                    if (x == 1) {
-                        AlertDialog.Builder alert = new AlertDialog.Builder(getContext());
-                        alert.setTitle("Estado da Rega");
-                        alert.setMessage("A rega está ligada!");
-                        alert.setPositiveButton("OK", null);
-                        alert.show();
-                    } else if (x == 0) {
-                        AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
-                        alert.setTitle("Estado da Rega");
-                        alert.setMessage("A rega está desligada!");
-                        alert.setPositiveButton("OK", null);
-                        alert.show();
+                    if (x == 1 && n >= 8) {
+                        LayoutInflater inflater = LayoutInflater.from(getContext());
+                        View subView = inflater.inflate(R.layout.dialog_layout, null);
+                        final ImageView subImageView = (ImageView)subView.findViewById(R.id.image);
+                        Drawable drawable = getResources().getDrawable(R.drawable.planta2);
+                        subImageView.setImageDrawable(drawable);
+
+                        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                        builder.setTitle("Estado da Rega");
+                        builder.setIcon(R.drawable.regar);
+                        builder.setMessage("A rega encontra-se ligada! O sistema regou " + n + " vezes nos ultimos 15 dias!" );
+                        builder.setView(subView);
+                        builder.setPositiveButton("OK", null);
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
+
+                    } else if (x == 0 && n <= 8) {
+                        LayoutInflater inflater = LayoutInflater.from(getContext());
+                        View subView = inflater.inflate(R.layout.dialog_layout, null);
+                        final ImageView subImageView = (ImageView)subView.findViewById(R.id.image);
+                        Drawable drawable = getResources().getDrawable(R.drawable.plantaboa);
+                        subImageView.setImageDrawable(drawable);
+
+                        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                        builder.setTitle("Estado da Rega");
+                        builder.setIcon(R.drawable.ads);
+                        builder.setMessage("A rega encontra-se desligada! O sistema regou " + n + " vezes nos ultimos 15 dias!" );
+                        builder.setView(subView);
+                        builder.setPositiveButton("OK", null);
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
+                    }else if ( x == 0 && n >= 8 ){
+                        LayoutInflater inflater = LayoutInflater.from(getContext());
+                        View subView = inflater.inflate(R.layout.dialog_layout, null);
+                        final ImageView subImageView = (ImageView)subView.findViewById(R.id.image);
+                        Drawable drawable = getResources().getDrawable(R.drawable.planta2);
+                        subImageView.setImageDrawable(drawable);
+
+                        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                        builder.setTitle("Estado da Rega");
+                        builder.setIcon(R.drawable.ads);
+                        builder.setMessage("A rega encontra-se desligada! O sistema regou " + n + " vezes nos ultimos 15 dias!" );
+                        builder.setView(subView);
+                        builder.setPositiveButton("OK", null);
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
+                    }else if (x == 1  && n <=8 ){
+                        LayoutInflater inflater = LayoutInflater.from(getContext());
+                        View subView = inflater.inflate(R.layout.dialog_layout, null);
+                        final ImageView subImageView = (ImageView)subView.findViewById(R.id.image);
+                        Drawable drawable = getResources().getDrawable(R.drawable.plantaboa);
+                        subImageView.setImageDrawable(drawable);
+
+                        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                        builder.setTitle("Estado da Rega");
+                        builder.setIcon(R.drawable.regar);
+                        builder.setMessage("A rega encontra-se ligada! O sistema regou " + n + " vezes nos ultimos 15 dias!" );
+                        builder.setView(subView);
+                        builder.setPositiveButton("OK", null);
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
                     }
 
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SmartAgriculture</string>
+    <string name="app_name">Agro Smart</string>
     <string name="Temperatura">Temperatura (ºC)</string>
     <string name="Todos">Todos</string>
     <string name="Solo">Humidade do Solo</string>

@@ -131,7 +131,7 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                          String content = "";
                          content += " " + "\n";
                          content += "Data: " + valores.get(i).getCreatedAt() + "\n";
-                       //  content += "ID: " + valores.get(i).getEntryId() + "\n";
+                         //content += "ID: " + valores.get(i).getEntryId() + "\n";
                          content += "Humidade do Solo: " + valores.get(i).getField1() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
@@ -276,90 +276,9 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
     }
 
 
-    private void getValores() {
 
-        Call<Feeds> feedsCall = jsonPlaceHolderApi.getAllFeeds();
-        feedsCall.enqueue(new Callback<Feeds>() {
-            @Override
-            public void onResponse(Call<Feeds> call, Response<Feeds> response) {
-                Feeds body = response.body();
-                List<Valores> valores = body.getvalor();
-                valores.size();
-               // if (Filtro == "Todos") {
-                    for (int i = valores.size() - 1; i >= 0; i--) {
-                        String content = "";
-                        content += " " + "\n";
-                        content += "Data: " + valores.get(i).getCreatedAt() + "\n";
-                        content += "ID: " + valores.get(i).getEntryId() + "\n";
-                        content += "Humidade Solo: " + valores.get(i).getField1() + "\n";
-                        content += "Humidade Ar (%): " + valores.get(i).getField2() + "\n";
-                        content += "Temperatura ºC: " + valores.get(i).getField3() + "\n";
-                        content += "Monoxido de Carbono: " + valores.get(i).getField4() + "\n";
-                        content += "Atuador: " + valores.get(i).getField5() + "\n";
-                        content += "Luminosidade:" + valores.get(i).getField6() + "\n";
-                        content += "-------------------------------------------------------------" + "\n";
-                        textViewResult.append(content);
-                    }
-                /*} else if (Filtro == "Temperatura (ºC)") {
-                    for (int i = valores.size() - 1; i >= 0; i--) {
-                        String content = "";
-                        content += " " + "\n";
-                        content += "Data: " + valores.get(i).getCreatedAt() + "\n";
-                        content += "ID: " + valores.get(i).getEntryId() + "\n";
-                        content += "Temperatura ºC: " + valores.get(i).getField3() + "\n";
-                        content += "-------------------------------------------------------------" + "\n";
-                        textViewResult.append(content);
-                    }
-                }*/
 
-            }
-            @Override
-            public void onFailure(Call<Feeds> call, Throwable t) {
-                textViewResult.setText(t.getMessage());
-            }
-        });
 
-    }
-
-    private void getTemperatura() {
-
-        Call<Feeds> feedsCall = jsonPlaceHolderApi.getAllFeeds();
-        feedsCall.enqueue(new Callback<Feeds>() {
-            @Override
-            public void onResponse(Call<Feeds> call, Response<Feeds> response) {
-                Feeds body = response.body();
-                List<Valores> valores = body.getvalor();
-                valores.size();
-                // if (Filtro == "Todos") {
-                for (int i = valores.size() - 1; i >= 0; i--) {
-                    String content = "";
-                    content += " " + "\n";
-                    content += "Data: " + valores.get(i).getCreatedAt() + "\n";
-                    content += "ID: " + valores.get(i).getEntryId() + "\n";
-                    content += "Temperatura ºC: " + valores.get(i).getField3() + "\n";
-                    content += "-------------------------------------------------------------" + "\n";
-                    textViewResult.append(content);
-                }
-                /*} else if (Filtro == "Temperatura (ºC)") {
-                    for (int i = valores.size() - 1; i >= 0; i--) {
-                        String content = "";
-                        content += " " + "\n";
-                        content += "Data: " + valores.get(i).getCreatedAt() + "\n";
-                        content += "ID: " + valores.get(i).getEntryId() + "\n";
-                        content += "Temperatura ºC: " + valores.get(i).getField3() + "\n";
-                        content += "-------------------------------------------------------------" + "\n";
-                        textViewResult.append(content);
-                    }
-                }*/
-
-            }
-            @Override
-            public void onFailure(Call<Feeds> call, Throwable t) {
-                textViewResult.setText(t.getMessage());
-            }
-        });
-
-    }
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
