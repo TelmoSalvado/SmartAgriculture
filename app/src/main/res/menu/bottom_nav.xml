@@ -8,11 +8,11 @@
     <item
         android:id="@+id/nav_values"
         android:icon="@drawable/ic_baseline_grass_24"
-        android:title="Valores" />
+        android:title="@string/Valores" />
 
     <item
         android:id="@+id/nav_graph"
         android:icon="@drawable/ic_baseline_bar_chart_24"
-        android:title="Gráficos" />
+        android:title="@string/Graphs" />
 
 </menu>

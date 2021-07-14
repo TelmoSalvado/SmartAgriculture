@@ -74,20 +74,20 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                      for (int i = valores.size() - 1; i >= 0; i--) {
                          x = Integer.parseInt(valores.get(i).getField5());
                          if (x == 0){
-                             Rega = "Desligada";
+                             Rega = getString(R.string.Desligado);
                          }else if (x == 1 ){
-                             Rega = "Ligada";
+                             Rega = getString(R.string.Ligado);
                          }
                          String content = "";
                          content += " " + "\n";
-                         content += "Data: " + valores.get(i).getCreatedAt() + "\n";
+                         content +=  getString(R.string.Data) + " : " + valores.get(i).getCreatedAt() + "\n";
                         // content += "ID: " + valores.get(i).getEntryId() + "\n";
-                         content += "Humidade Solo: " + valores.get(i).getField1() + "\n";
-                         content += "Humidade Ar (%): " + valores.get(i).getField2() + "\n";
-                         content += "Temperatura ºC: " + valores.get(i).getField3() + "\n";
-                         content += "Monoxido de Carbono: " + valores.get(i).getField4() + "\n";
-                         content += "Estado da Rega: " + Rega + "\n";
-                         content += "Luminosidade:" + valores.get(i).getField6() + "\n";
+                         content += getString(R.string.Solo) + " : " + valores.get(i).getField1() + "\n";
+                         content += getString(R.string.HumidadeAr) + " : "+ valores.get(i).getField2() + "\n";
+                         content += getString(R.string.Temperatura) + " : "+ valores.get(i).getField3() + "\n";
+                         content += getString(R.string.Monoxido) + " : "+ valores.get(i).getField4() + "\n";
+                         content += getString(R.string.Rega) + " : " + Rega + "\n";
+                         content += getString(R.string.Luminosidade) + " : " + valores.get(i).getField6() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
                      }
@@ -110,9 +110,9 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                      for (int i = valores.size() - 1; i >= 0; i--) {
                          String content = "";
                          content += " " + "\n";
-                         content += "Data: " + valores.get(i).getCreatedAt() + "\n";
+                         content += getString(R.string.Data) + valores.get(i).getCreatedAt() + "\n";
                         // content += "ID: " + valores.get(i).getEntryId() + "\n";
-                         content += "Temperatura ºC: " + valores.get(i).getField3() + "\n";
+                         content += getString(R.string.Temperatura) + " : "+ valores.get(i).getField3() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
                      }
@@ -135,9 +135,9 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                      for (int i = valores.size() - 1; i >= 0; i--) {
                          String content = "";
                          content += " " + "\n";
-                         content += "Data: " + valores.get(i).getCreatedAt() + "\n";
+                         content += getString(R.string.Data) + " : " + valores.get(i).getCreatedAt() + "\n";
                          //content += "ID: " + valores.get(i).getEntryId() + "\n";
-                         content += "Humidade do Solo: " + valores.get(i).getField1() + "\n";
+                         content += getString(R.string.Solo) + " : " + valores.get(i).getField1() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
                      }
@@ -159,9 +159,9 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                      for (int i = valores.size() - 1; i >= 0; i--) {
                          String content = "";
                          content += " " + "\n";
-                         content += "Data: " + valores.get(i).getCreatedAt() + "\n";
+                         content +=  getString(R.string.Data) + " : "  + valores.get(i).getCreatedAt() + "\n";
                         // content += "ID: " + valores.get(i).getEntryId() + "\n";
-                         content += "Humidade Ar (%): " + valores.get(i).getField2() + "\n";
+                         content += getString(R.string.HumidadeAr) + " : " + valores.get(i).getField2() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
                      }
@@ -183,9 +183,9 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                      for (int i = valores.size() - 1; i >= 0; i--) {
                          String content = "";
                          content += " " + "\n";
-                         content += "Data: " + valores.get(i).getCreatedAt() + "\n";
+                         content +=  getString(R.string.Data) + " : "  + valores.get(i).getCreatedAt() + "\n";
                          //content += "ID: " + valores.get(i).getEntryId() + "\n";
-                         content += "Monoxido de Carbono: " + valores.get(i).getField4() + "\n";
+                         content += getString(R.string.Monoxido) + " : " + valores.get(i).getField4() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
                      }
@@ -207,9 +207,9 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                      for (int i = valores.size() - 1; i >= 0; i--) {
                          String content = "";
                          content += " " + "\n";
-                         content += "Data: " + valores.get(i).getCreatedAt() + "\n";
+                         content +=  getString(R.string.Data) + " : " + valores.get(i).getCreatedAt() + "\n";
                          //content += "ID: " + valores.get(i).getEntryId() + "\n";
-                         content += "Luminosidade:" + valores.get(i).getField6() + "\n";
+                         content += getString(R.string.Luminosidade) + " : "+ valores.get(i).getField6() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
                      }
@@ -237,9 +237,9 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                          }
                          String content = "";
                          content += " " + "\n";
-                         content += "Data: " + valores.get(i).getCreatedAt() + "\n";
+                         content +=  getString(R.string.Data) + " : " + valores.get(i).getCreatedAt() + "\n";
                         // content += "ID: " + valores.get(i).getEntryId() + "\n";
-                         content += "Estado da rega: " + Rega + "\n";
+                         content += getString(R.string.Rega) + " : " + Rega + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
                      }

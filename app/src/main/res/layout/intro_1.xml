@@ -16,7 +16,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="A app para monitorar a sua plantação"
+        android:text="@string/Text1"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="18sp"
@@ -26,7 +26,7 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Simples e fácil de utilizar"
+        android:text="@string/Text2"
         android:textAlignment="center"
         android:textColor="#686565" />
 </LinearLayout>

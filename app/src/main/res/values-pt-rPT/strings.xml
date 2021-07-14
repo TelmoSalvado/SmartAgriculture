@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agro Smart</string>
+    <string name="Temperatura">Temperatura (ºC)</string>
+    <string name="Todos">Todos</string>
+    <string name="Solo">Humidade do Solo</string>
+    <string name="HumidadeAr">Humidade Ar (%)</string>
+    <string name="Monoxido">Monóxido de Carbono</string>
+    <string name="Luminosidade">Luminosidade</string>
+    <string name="Rega">Estado da Rega</string>
+    <string name="TH">Temperatura e Humidade</string>
+    <string name = "Data"> Data</string>
+    <string name="Ligado"> Ligada</string>
+    <string name="Desligado"> Desligada</string>
+    <string name="Valores"> Valores</string>
+    <string name ="Graphs"> Gráficos</string>
+    <string name="Entrar"> Entre na conta</string>
+    <string name = "Password"> Palavra-Passe</string>
+    <string name = "SignUp">Crie a sua conta gratuita </string>
+    <string name="Nome">Nome</string>
+    <string name="Registar">Registar</string>
+    <string name="Filtrar">Filtar: </string>
+    <string name="Text1"> A app para monitorar a sua plantação</string>
+    <string name="Text2"> Simples e fácil de utilizar</string>
+    <string name ="Text3"> Quais os valores que posso observar? </string>
+    <string name="Text4"> Luminosidade, Humidade do Solo, Monóxido de carbono, Temperatura e Humidade do Ar são alguns dos valores que pode visualizar</string>
+    <string name="Text5"> Quer poupar água? Deixe connosco</string>
+    <string name="Text6">Comece agora mesmo</string>
+    <string name="Text7">Já tenho conta</string>
+    <string name="EstadoRega">Estado da Rega</string>
+    <string name="Text8">O sistema de rega encontra-se</string>
+    <string name="Text9">! Estão</string>
+    <string name="Text10"> A rega encontra-se ligada! O sistema regou</string>
+    <string name="Text11"> A rega encontra-se desligada! O sistema regou</string>
+    <string name="Text12">vezes nos ultimos 15 dias!</string>
+</resources>

@@ -16,7 +16,7 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quais os valores que posso observar?"
+        android:text="@string/Text3"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="18sp"
@@ -26,7 +26,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="\n Luminosidade \n Humidade do Solo \n  Monóxido de carbono \n Temperatura e Humidade do Ar \n  são alguns dos valores que pode visualizar"
+        android:text="@string/Text4"
         android:textAlignment="center"
         android:textColor="#686565"
         android:textSize="14sp" />

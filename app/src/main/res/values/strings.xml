@@ -1,31 +1,61 @@
 <resources>
     <string name="app_name">Agro Smart</string>
-    <string name="Temperatura">Temperatura (ºC)</string>
-    <string name="Todos">Todos</string>
-    <string name="Solo">Humidade do Solo</string>
-    <string name="HumidadeAr">Humidade Ar (%)</string>
-    <string name="Monoxido">Monóxido de Carbono</string>
-    <string name="Luminosidade">Luminosidade</string>
-    <string name="Rega">Estado da Rega</string>
-    <string name="TH">Temperatura e Humidade</string>
+    <string name="Temperatura">Tempurature</string>
+    <string name="Todos">All</string>
+    <string name="Solo">Soil Moisture</string>
+    <string name="HumidadeAr">Humidity (%)</string>
+    <string name="Monoxido">Carbon monoxide</string>
+    <string name="Luminosidade">Luminosity</string>
+    <string name="Rega">Irrigation State</string>
+    <string name="TH">Temperature and Humidity</string>
+    <string name = "Data"> Date</string>
+    <string name="Ligado"> On</string>
+    <string name="Desligado"> Off</string>
+    <string name="Valores"> Values</string>
+    <string name ="Graphs"> Graphs</string>
+    <string name="Entrar"> Sign in</string>
+    <string name = "Password"> Password</string>
+    <string name = "SignUp"> Create an free account</string>
+    <string name="Nome">Name</string>
+    <string name="Registar">Registe</string>
+    <string name="Filtrar">Filter: </string>
+    <string name="Text1"> An app to monitor your plantation</string>
+    <string name="Text2"> Simple and easy to use</string>
+    <string name = "Text3"> What values can i observe? </string>
+    <string name="Text4"> "Luminosity, Soil Moisture, Carbon monoxide, Tempurature and Humidity are some of the values you can see"</string>
+    <string name="Text5"> Want to save water? Leave with us</string>
+    <string name="Text6">Start right now</string>
+    <string name="Text7">I already have an account</string>
+    <string name="Text8"> The irrigation system is</string>
+    <string name="EstadoRega">Watering Status!</string>
+    <string name="Text9">! There are</string>
+    <string name="Text10"> Watering is on! The system watered</string>
+    <string name="Text11"> Watering is off! The system watered</string>
+    <string name="Text12">times in the last 15 days!</string>
+
+
+
+
     <string-array name="filtros">
-        <item>Todos</item>
-        <item>Temperatura (ºC)</item>
-        <item>Humidade do Solo</item>
-        <item>Humidade Ar (%)</item>
-        <item>Monóxido de Carbono</item>
-        <item>Luminosidade</item>
-        <item>Estado da Rega</item>
+        <item>@string/Todos</item>
+        <item>@string/Temperatura</item>
+        <item>@string/HumidadeAr</item>
+        <item>@string/Solo</item>
+        <item>@string/Monoxido</item>
+        <item>@string/Luminosidade</item>
+        <item>@string/Rega</item>
     </string-array>
 
     <string-array name="filtrosGraphs">
-        <item>Todos</item>
-        <item>Temperatura (ºC)</item>
-        <item>Humidade do Solo</item>
-        <item>Humidade Ar (%)</item>
-        <item>Monóxido de Carbono</item>
-        <item>Luminosidade</item>
-        <item>Estado da Rega</item>
-        <item>Temperatura e Humidade</item>
+        <item>@string/Todos</item>
+        <item>@string/Temperatura</item>
+        <item>@string/HumidadeAr</item>
+        <item>@string/Solo</item>
+        <item>@string/Monoxido</item>
+        <item>@string/Luminosidade</item>
+        <item>@string/Rega</item>
+        <item>@string/TH</item>
     </string-array>
+
+
 </resources>

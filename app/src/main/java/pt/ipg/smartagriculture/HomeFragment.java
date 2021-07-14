@@ -113,9 +113,9 @@ public class HomeFragment extends Fragment {
                     Temp = valores.get(i).getField3();
 
                     if(x==1){
-                        Rega = "ligada";
+                        Rega = getString(R.string.Ligado);
                     }else if (x == 0){
-                        Rega = "desligada";
+                        Rega = getString(R.string.Desligado);
                     }
                     createNotificationChannel();
                     createNotification(Rega, Temp);
@@ -127,9 +127,9 @@ public class HomeFragment extends Fragment {
                         subImageView.setImageDrawable(drawable);
 
                         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                        builder.setTitle("Estado da Rega");
+                        builder.setTitle(getString(R.string.EstadoRega));
                         builder.setIcon(R.drawable.regar);
-                        builder.setMessage("A rega encontra-se ligada! O sistema regou " + n + " vezes nos ultimos 15 dias!" );
+                        builder.setMessage(getString(R.string.Text10) + " " + n + " " + getString(R.string.Text12) );
                         builder.setView(subView);
                         builder.setPositiveButton("OK", null);
                         AlertDialog alertDialog = builder.create();
@@ -143,9 +143,9 @@ public class HomeFragment extends Fragment {
                         subImageView.setImageDrawable(drawable);
 
                         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                        builder.setTitle("Estado da Rega");
+                        builder.setTitle(getString(R.string.EstadoRega));
                         builder.setIcon(R.drawable.ads);
-                        builder.setMessage("A rega encontra-se desligada! O sistema regou " + n + " vezes nos ultimos 15 dias!" );
+                        builder.setMessage(getString(R.string.Text11) + " " + n + " " + getString(R.string.Text12) );
                         builder.setView(subView);
                         builder.setPositiveButton("OK", null);
                         AlertDialog alertDialog = builder.create();
@@ -158,9 +158,9 @@ public class HomeFragment extends Fragment {
                         subImageView.setImageDrawable(drawable);
 
                         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                        builder.setTitle("Estado da Rega");
+                        builder.setTitle(getString(R.string.EstadoRega));
                         builder.setIcon(R.drawable.ads);
-                        builder.setMessage("A rega encontra-se desligada! O sistema regou " + n + " vezes nos ultimos 15 dias!" );
+                        builder.setMessage(getString(R.string.Text11) + " " + n + " " + getString(R.string.Text12) );
                         builder.setView(subView);
                         builder.setPositiveButton("OK", null);
                         AlertDialog alertDialog = builder.create();
@@ -173,9 +173,9 @@ public class HomeFragment extends Fragment {
                         subImageView.setImageDrawable(drawable);
 
                         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                        builder.setTitle("Estado da Rega");
+                        builder.setTitle(getString(R.string.EstadoRega));
                         builder.setIcon(R.drawable.regar);
-                        builder.setMessage("A rega encontra-se ligada! O sistema regou " + n + " vezes nos ultimos 15 dias!" );
+                        builder.setMessage(getString(R.string.Text10) + " " + n + " " + getString(R.string.Text12) );
                         builder.setView(subView);
                         builder.setPositiveButton("OK", null);
                         AlertDialog alertDialog = builder.create();
@@ -211,8 +211,8 @@ public class HomeFragment extends Fragment {
     private void createNotification(String EstadoRega, String Temperatura) {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getActivity(), "CHANNEL_ID") //.Builder(this, "CHANNEL_ID")
                 .setSmallIcon(R.drawable.regar) // .setSmallIcon(R.drawable.notification_icon)
-                .setContentTitle("Estado da Rega!")
-                .setContentText("O sistema de rega encontra-se " + EstadoRega + " ! Estão " + Temperatura + " ºC ")
+                .setContentTitle(getString(R.string.EstadoRega))
+                .setContentText(getString(R.string.Text8) + " " + EstadoRega + " " + getString(R.string.Text9) + " " + Temperatura + " ºC ")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(getActivity());
 
