@@ -10,6 +10,6 @@ public interface JsonPlaceHolderApi {
     @GET("posts")
     Call<List<Post>> getPosts();
 
-    @GET("/channels/1424295/feed.json")
+    @GET("/channels/1424295/feed.json?results=400")
     Call<Feeds> getAllFeeds();
 }
