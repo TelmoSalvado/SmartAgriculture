@@ -32,7 +32,8 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
     private List<Feeds> feeds;
     Spinner spinnerFiltros;
     String Filtro;
-
+    int x = 0;
+    String Rega;
 
     @Nullable
     @Override
@@ -50,15 +51,13 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
         spinnerFiltros = view.findViewById(R.id.spinner);
         textViewResult = view.findViewById(R.id.text_view_result);
         spinnerFiltros = (Spinner) view.findViewById(R.id.spinner);
+
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 getActivity(), R.array.filtros,
                 android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerFiltros.setAdapter(adapter);
         spinnerFiltros.setOnItemSelectedListener(this);
-        Log.d("fiLTR", " " + Filtro);
-        //getPosts();
-        //getValores();
     }
     public void updateFiltro(){
 
@@ -73,6 +72,12 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                      List<Valores> valores = body.getvalor();
                      valores.size();
                      for (int i = valores.size() - 1; i >= 0; i--) {
+                         x = Integer.parseInt(valores.get(i).getField5());
+                         if (x == 0){
+                             Rega = "Desligada";
+                         }else if (x == 1 ){
+                             Rega = "Ligada";
+                         }
                          String content = "";
                          content += " " + "\n";
                          content += "Data: " + valores.get(i).getCreatedAt() + "\n";
@@ -81,7 +86,7 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                          content += "Humidade Ar (%): " + valores.get(i).getField2() + "\n";
                          content += "Temperatura ºC: " + valores.get(i).getField3() + "\n";
                          content += "Monoxido de Carbono: " + valores.get(i).getField4() + "\n";
-                         content += "Atuador: " + valores.get(i).getField5() + "\n";
+                         content += "Estado da Rega: " + Rega + "\n";
                          content += "Luminosidade:" + valores.get(i).getField6() + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
@@ -224,11 +229,17 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
                      List<Valores> valores = body.getvalor();
                      valores.size();
                      for (int i = valores.size() - 1; i >= 0; i--) {
+                         x = Integer.parseInt(valores.get(i).getField5());
+                         if (x == 0){
+                             Rega = "Desligada";
+                         }else if (x == 1 ){
+                             Rega = "Ligada";
+                         }
                          String content = "";
                          content += " " + "\n";
                          content += "Data: " + valores.get(i).getCreatedAt() + "\n";
                         // content += "ID: " + valores.get(i).getEntryId() + "\n";
-                         content += "Atuador: " + valores.get(i).getField5() + "\n";
+                         content += "Estado da rega: " + Rega + "\n";
                          content += "-------------------------------------------------------------" + "\n";
                          textViewResult.append(content);
                      }
@@ -241,45 +252,6 @@ public class ValoresFragment extends Fragment implements AdapterView.OnItemSelec
          }
 
     }
-
-
-
-        private void getPosts() {
-
-        Call<List<Post>> call = jsonPlaceHolderApi.getPosts();
-
-        call.enqueue(new Callback<List<Post>>() {
-            @Override
-            public void onResponse(Call<List<Post>> call, Response<List<Post>> response) {
-                if (!response.isSuccessful()) {
-                    textViewResult.setText("Code: " + response.code());
-                    return;
-                }
-                List<Post> posts = response.body();
-
-                for (Post post : posts) {
-                    String content = "";
-                    content += "UserId: " + post.getUserid() + "\n";
-                    content += "ID: " + post.getId() + "\n";
-                    content += "Title: " + post.getTitle() + "\n";
-                    content += "Text: " + post.getText() + "\n\n";
-
-                    textViewResult.append(content);
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<Post>> call, Throwable t) {
-                textViewResult.setText(t.getMessage());
-            }
-        });
-    }
-
-
-
-
-
-
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         updateFiltro();

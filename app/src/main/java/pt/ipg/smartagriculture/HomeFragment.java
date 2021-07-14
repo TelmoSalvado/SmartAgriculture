@@ -41,6 +41,8 @@ public class HomeFragment extends Fragment {
     int width = 450;
     int height = 260;
     int n = 0;
+    String Temp, Rega;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -108,6 +110,15 @@ public class HomeFragment extends Fragment {
                 }
                 for (int i = valores.size() - 1; i >= valores.size() - 1; i--) {
                     x = Integer.parseInt(valores.get(i).getField5());
+                    Temp = valores.get(i).getField3();
+
+                    if(x==1){
+                        Rega = "ligada";
+                    }else if (x == 0){
+                        Rega = "desligada";
+                    }
+                    createNotificationChannel();
+                    createNotification(Rega, Temp);
                     if (x == 1 && n >= 8) {
                         LayoutInflater inflater = LayoutInflater.from(getContext());
                         View subView = inflater.inflate(R.layout.dialog_layout, null);
@@ -180,6 +191,33 @@ public class HomeFragment extends Fragment {
             }
         });
 
+    }
+    private void createNotificationChannel() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = "channel_name"; // getString(R.string.channel_name);
+            String description = "channel_description"; // getString(R.string.channel_description);
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel("CHANNEL_ID", name, importance);
+            channel.setDescription(description);
+            // Register the channel with the system; you can't change the importance
+            // or other notification behaviors after this
+            NotificationManager notificationManager = getActivity().getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }
+
+    private void createNotification(String EstadoRega, String Temperatura) {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(getActivity(), "CHANNEL_ID") //.Builder(this, "CHANNEL_ID")
+                .setSmallIcon(R.drawable.regar) // .setSmallIcon(R.drawable.notification_icon)
+                .setContentTitle("Estado da Rega!")
+                .setContentText("O sistema de rega encontra-se " + EstadoRega + " ! Estão " + Temperatura + " ºC ")
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(getActivity());
+
+        // notificationId is a unique int for each notification that you must define
+        notificationManager.notify(0, builder.build());
     }
 }
 
