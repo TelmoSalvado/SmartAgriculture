@@ -172,6 +172,15 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
             String encodedHtml3 = Base64.encodeToString(unencodedHtml3.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml3, "text/html", "base64");
+            unencodedHtml3 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "\n" + "https://thingspeak.com/channels/1424295/widgets/337597" + " ></iframe>";
+            encodedHtml3 = Base64.encodeToString(unencodedHtml3.getBytes(), Base64.NO_PADDING);
+            webViewTemperatura.getSettings().setJavaScriptEnabled(true);
+            webViewTemperatura.loadData(encodedHtml3, "text/html", "base64");
+            unencodedHtml3 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/334644" + " ></iframe>";
+            encodedHtml3 = Base64.encodeToString(unencodedHtml3.getBytes(), Base64.NO_PADDING);
+            webViewHumidadeAr.getSettings().setJavaScriptEnabled(true);
+            webViewHumidadeAr.loadData(encodedHtml3, "text/html", "base64");
+
         } else if (Filtros.equals(getString(R.string.Solo))) {
             webView.loadUrl("about:blank");
             webViewTemperatura.loadUrl("about:blank");
@@ -185,6 +194,20 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
             String encodedHtml = Base64.encodeToString(unencodedHtml.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml, "text/html", "base64");
+            unencodedHtml = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "\n" + "https://thingspeak.com/channels/1424295/widgets/334603" + " ></iframe>";
+            encodedHtml = Base64.encodeToString(unencodedHtml.getBytes(), Base64.NO_PADDING);
+            webViewTemperatura.getSettings().setJavaScriptEnabled(true);
+            webViewTemperatura.loadData(encodedHtml, "text/html", "base64");
+            unencodedHtml = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/334601" + " ></iframe>";
+            encodedHtml= Base64.encodeToString(unencodedHtml.getBytes(), Base64.NO_PADDING);
+            webViewHumidadeAr.getSettings().setJavaScriptEnabled(true);
+            webViewHumidadeAr.loadData(encodedHtml, "text/html", "base64");
+            unencodedHtml = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/334610" + " ></iframe>";
+            encodedHtml= Base64.encodeToString(unencodedHtml.getBytes(), Base64.NO_PADDING);
+            webViewMonoxido.getSettings().setJavaScriptEnabled(true);
+            webViewMonoxido.loadData(encodedHtml, "text/html", "base64");
+
+
         } else if (Filtros.equals(getString(R.string.HumidadeAr))) {
             webView.loadUrl("about:blank");
             webViewTemperatura.loadUrl("about:blank");
@@ -198,6 +221,14 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
             String encodedHtml2 = Base64.encodeToString(unencodedHtml2.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml2, "text/html", "base64");
+            unencodedHtml2 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "\n" + "https://thingspeak.com/channels/1424295/widgets/337596" + " ></iframe>";
+            encodedHtml2 = Base64.encodeToString(unencodedHtml2.getBytes(), Base64.NO_PADDING);
+            webViewTemperatura.getSettings().setJavaScriptEnabled(true);
+            webViewTemperatura.loadData(encodedHtml2, "text/html", "base64");
+            unencodedHtml2 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/334643" + " ></iframe>";
+            encodedHtml2= Base64.encodeToString(unencodedHtml2.getBytes(), Base64.NO_PADDING);
+            webViewHumidadeAr.getSettings().setJavaScriptEnabled(true);
+            webViewHumidadeAr.loadData(encodedHtml2, "text/html", "base64");
         } else if (Filtros.equals(getString(R.string.Monoxido))) {
             webView.loadUrl("about:blank");
             webViewTemperatura.loadUrl("about:blank");
@@ -211,6 +242,15 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
             String encodedHtml4 = Base64.encodeToString(unencodedHtml4.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml4, "text/html", "base64");
+            unencodedHtml4 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "\n" + " https://thingspeak.com/channels/1424295/widgets/337598" + " ></iframe>";
+            encodedHtml4 = Base64.encodeToString(unencodedHtml4.getBytes(), Base64.NO_PADDING);
+            webViewTemperatura.getSettings().setJavaScriptEnabled(true);
+            webViewTemperatura.loadData(encodedHtml4, "text/html", "base64");
+            unencodedHtml4 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/334645" + " ></iframe>";
+            encodedHtml4= Base64.encodeToString(unencodedHtml4.getBytes(), Base64.NO_PADDING);
+            webViewHumidadeAr.getSettings().setJavaScriptEnabled(true);
+            webViewHumidadeAr.loadData(encodedHtml4, "text/html", "base64");
+
         } else if (Filtros.equals(getString(R.string.Luminosidade))) {
             webView.loadUrl("about:blank");
             webViewTemperatura.loadUrl("about:blank");
@@ -224,6 +264,19 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
             String encodedHtml5 = Base64.encodeToString(unencodedHtml5.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml5, "text/html", "base64");
+            unencodedHtml5 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "\n" + "https://thingspeak.com/channels/1424295/widgets/337599" + " ></iframe>";
+            encodedHtml5 = Base64.encodeToString(unencodedHtml5.getBytes(), Base64.NO_PADDING);
+            webViewTemperatura.getSettings().setJavaScriptEnabled(true);
+            webViewTemperatura.loadData(encodedHtml5, "text/html", "base64");
+            unencodedHtml5 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/334646" + " ></iframe>";
+            encodedHtml5= Base64.encodeToString(unencodedHtml5.getBytes(), Base64.NO_PADDING);
+            webViewHumidadeAr.getSettings().setJavaScriptEnabled(true);
+            webViewHumidadeAr.loadData(encodedHtml5, "text/html", "base64");
+            unencodedHtml5 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/337602" + " ></iframe>";
+            encodedHtml5= Base64.encodeToString(unencodedHtml5.getBytes(), Base64.NO_PADDING);
+            webViewMonoxido.getSettings().setJavaScriptEnabled(true);
+            webViewMonoxido.loadData(encodedHtml5, "text/html", "base64");
+
         } else if (Filtros.equals(getString(R.string.Rega))) {
             webView.loadUrl("about:blank");
             webViewTemperatura.loadUrl("about:blank");
@@ -237,6 +290,8 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
             String encodedHtml6 = Base64.encodeToString(unencodedHtml6.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml6, "text/html", "base64");
+
+
         }else if (Filtros.equals(getString(R.string.TH))){
             webView.loadUrl("about:blank");
             webViewTemperatura.loadUrl("about:blank");
