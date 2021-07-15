@@ -22,8 +22,9 @@
     <string name="Text1"> An app to monitor your plantation</string>
     <string name="Text2"> Simple and easy to use</string>
     <string name = "Text3"> What values can i observe? </string>
-    <string name="Text4"> "Luminosity, Soil Moisture, Carbon monoxide, Tempurature and Humidity are some of the values you can see"</string>
-    <string name="Text5"> Want to save water? Leave with us</string>
+    <string name="Text4"> are some of the values you can see</string>
+    <string name="Text5"> Want to save water?</string>
+    <string name="Leave">Leave with us</string>
     <string name="Text6">Start right now</string>
     <string name="Text7">I already have an account</string>
     <string name="Text8"> The irrigation system is</string>

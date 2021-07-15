@@ -23,7 +23,7 @@
     <string name="Text1"> A app para monitorar a sua plantação</string>
     <string name="Text2"> Simples e fácil de utilizar</string>
     <string name ="Text3"> Quais os valores que posso observar? </string>
-    <string name="Text4"> Luminosidade, Humidade do Solo, Monóxido de carbono, Temperatura e Humidade do Ar são alguns dos valores que pode visualizar</string>
+    <string name="Text4"> são alguns dos valores que pode visualizar</string>
     <string name="Text5"> Quer poupar água? Deixe connosco</string>
     <string name="Text6">Comece agora mesmo</string>
     <string name="Text7">Já tenho conta</string>
@@ -33,4 +33,5 @@
     <string name="Text10"> A rega encontra-se ligada! O sistema regou</string>
     <string name="Text11"> A rega encontra-se desligada! O sistema regou</string>
     <string name="Text12">vezes nos ultimos 15 dias!</string>
+    <string name="Leave">Deixe connosco</string>
 </resources>

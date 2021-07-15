@@ -22,4 +22,14 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Leave"
+        android:textAlignment="center"
+        android:textColor="#686565"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
 </LinearLayout>

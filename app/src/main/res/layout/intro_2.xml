@@ -26,6 +26,42 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/Luminosidade"
+        android:textAlignment="center"
+        android:textColor="#686565"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Solo"
+        android:textAlignment="center"
+        android:textColor="#686565"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Monoxido"
+        android:textAlignment="center"
+        android:textColor="#686565"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TH"
+        android:textAlignment="center"
+        android:textColor="#686565"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/Text4"
         android:textAlignment="center"
         android:textColor="#686565"
