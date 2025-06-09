@@ -73,48 +73,48 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
         webViewLuminosidade = view.findViewById(R.id.webViewLuminosidade);
         webViewAtuador = view.findViewById(R.id.webViewAtuador);
         webViewTempHum = view.findViewById(R.id.webViewTemperaturaHumidade);
-        /*String unencodedHtml = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+        /*String unencodedHtml = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
         String encodedHtml = Base64.encodeToString(unencodedHtml.getBytes(), Base64.NO_PADDING);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadData(encodedHtml, "text/html", "base64"):*/
 
-       /* String unencodedHtml2 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+       /* String unencodedHtml2 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
         String encodedHtml2 = Base64.encodeToString(unencodedHtml2.getBytes(), Base64.NO_PADDING);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadData(encodedHtml2, "text/html", "base64");
 
         webView = view.findViewById(R.id.webViewTemperatura);
-        String unencodedHtml3 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+        String unencodedHtml3 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
         String encodedHtml3 = Base64.encodeToString(unencodedHtml3.getBytes(), Base64.NO_PADDING);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadData(encodedHtml3, "text/html", "base64");
 
         webView = view.findViewById(R.id.webViewMonóxido);
-        String unencodedHtml4 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+        String unencodedHtml4 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
         String encodedHtml4 = Base64.encodeToString(unencodedHtml4.getBytes(), Base64.NO_PADDING);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadData(encodedHtml4, "text/html", "base64");
 
         webView = view.findViewById(R.id.webViewLuminosidade);
-        String unencodedHtml5 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+        String unencodedHtml5 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
         String encodedHtml5 = Base64.encodeToString(unencodedHtml5.getBytes(), Base64.NO_PADDING);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadData(encodedHtml5, "text/html", "base64");
 
         webView = view.findViewById(R.id.webViewAtuador);
-        String unencodedHtml6 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+        String unencodedHtml6 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
         String encodedHtml6 = Base64.encodeToString(unencodedHtml6.getBytes(), Base64.NO_PADDING);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadData(encodedHtml6, "text/html", "base64");
 
         webView = view.findViewById(R.id.webViewTemperaturaHumidade);
-        String unencodedHtml7 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/apps/matlab_visualizations/416492" + " ></iframe>";
+        String unencodedHtml7 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/apps/matlab_visualizations/416492\"></iframe>";
         String encodedHtml7 = Base64.encodeToString(unencodedHtml7.getBytes(), Base64.NO_PADDING);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadData(encodedHtml7, "text/html", "base64");
 
         webView = view.findViewById(R.id.webViewAtuador);
-        String unencodedHtml8 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/apps/matlab_visualizations/416490" + " ></iframe>";
+        String unencodedHtml8 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/apps/matlab_visualizations/416490\"></iframe>";
         String encodedHtml8 = Base64.encodeToString(unencodedHtml8.getBytes(), Base64.NO_PADDING);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadData(encodedHtml8, "text/html", "base64");
@@ -125,37 +125,37 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
         Filtros = ((String) spinnerFiltrarGraphs.getSelectedItem());
         if (Filtros.equals(getString(R.string.Todos))) {
            //Solo
-            String unencodedHtml = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+            String unencodedHtml = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
             String encodedHtml = Base64.encodeToString(unencodedHtml.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml, "text/html", "base64");
             //Temperatura
-            String unencodedHtml3 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+            String unencodedHtml3 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
             String encodedHtml3 = Base64.encodeToString(unencodedHtml3.getBytes(), Base64.NO_PADDING);
             webViewTemperatura.getSettings().setJavaScriptEnabled(true);
             webViewTemperatura.loadData(encodedHtml3, "text/html", "base64");
             //HumidadeAr
-            String unencodedHtml2 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+            String unencodedHtml2 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
             String encodedHtml2 = Base64.encodeToString(unencodedHtml2.getBytes(), Base64.NO_PADDING);
             webViewHumidadeAr.getSettings().setJavaScriptEnabled(true);
             webViewHumidadeAr.loadData(encodedHtml2, "text/html", "base64");
             //Monoxido
-            String unencodedHtml4 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+            String unencodedHtml4 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
             String encodedHtml4 = Base64.encodeToString(unencodedHtml4.getBytes(), Base64.NO_PADDING);
             webViewMonoxido.getSettings().setJavaScriptEnabled(true);
             webViewMonoxido.loadData(encodedHtml4, "text/html", "base64");
             //Luminosidade
-            String unencodedHtml5 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+            String unencodedHtml5 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
             String encodedHtml5 = Base64.encodeToString(unencodedHtml5.getBytes(), Base64.NO_PADDING);
             webViewLuminosidade.getSettings().setJavaScriptEnabled(true);
             webViewLuminosidade.loadData(encodedHtml5, "text/html", "base64");
             //Atuador
-            String unencodedHtml8 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/apps/matlab_visualizations/416490" + " ></iframe>";
+            String unencodedHtml8 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/apps/matlab_visualizations/416490\"></iframe>";
             String encodedHtml8 = Base64.encodeToString(unencodedHtml8.getBytes(), Base64.NO_PADDING);
             webViewAtuador.getSettings().setJavaScriptEnabled(true);
             webViewAtuador.loadData(encodedHtml8, "text/html", "base64");
             //TempHum
-            String unencodedHtml7 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/apps/matlab_visualizations/416492" + " ></iframe>";
+            String unencodedHtml7 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/apps/matlab_visualizations/416492\"></iframe>";
             String encodedHtml7 = Base64.encodeToString(unencodedHtml7.getBytes(), Base64.NO_PADDING);
             webViewTempHum.getSettings().setJavaScriptEnabled(true);
             webViewTempHum.loadData(encodedHtml7, "text/html", "base64");
@@ -168,15 +168,15 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
             webViewLuminosidade.loadUrl("about:blank");
             webViewTempHum.loadUrl("about:blank");
 
-            String unencodedHtml3 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+            String unencodedHtml3 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
             String encodedHtml3 = Base64.encodeToString(unencodedHtml3.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml3, "text/html", "base64");
-            unencodedHtml3 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "\n" + "https://thingspeak.com/channels/1424295/widgets/337597" + " ></iframe>";
+            unencodedHtml3 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"\nhttps://thingspeak.com/channels/1424295/widgets/337597\"></iframe>";
             encodedHtml3 = Base64.encodeToString(unencodedHtml3.getBytes(), Base64.NO_PADDING);
             webViewTemperatura.getSettings().setJavaScriptEnabled(true);
             webViewTemperatura.loadData(encodedHtml3, "text/html", "base64");
-            unencodedHtml3 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/334644" + " ></iframe>";
+            unencodedHtml3 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/widgets/334644\"></iframe>";
             encodedHtml3 = Base64.encodeToString(unencodedHtml3.getBytes(), Base64.NO_PADDING);
             webViewHumidadeAr.getSettings().setJavaScriptEnabled(true);
             webViewHumidadeAr.loadData(encodedHtml3, "text/html", "base64");
@@ -190,19 +190,19 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
             webViewLuminosidade.loadUrl("about:blank");
             webViewTempHum.loadUrl("about:blank");
 
-            String unencodedHtml = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+            String unencodedHtml = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
             String encodedHtml = Base64.encodeToString(unencodedHtml.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml, "text/html", "base64");
-            unencodedHtml = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "\n" + "https://thingspeak.com/channels/1424295/widgets/334603" + " ></iframe>";
+            unencodedHtml = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"\nhttps://thingspeak.com/channels/1424295/widgets/334603\"></iframe>";
             encodedHtml = Base64.encodeToString(unencodedHtml.getBytes(), Base64.NO_PADDING);
             webViewTemperatura.getSettings().setJavaScriptEnabled(true);
             webViewTemperatura.loadData(encodedHtml, "text/html", "base64");
-            unencodedHtml = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/334601" + " ></iframe>";
+            unencodedHtml = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/widgets/334601\"></iframe>";
             encodedHtml= Base64.encodeToString(unencodedHtml.getBytes(), Base64.NO_PADDING);
             webViewHumidadeAr.getSettings().setJavaScriptEnabled(true);
             webViewHumidadeAr.loadData(encodedHtml, "text/html", "base64");
-            unencodedHtml = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/334610" + " ></iframe>";
+            unencodedHtml = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/widgets/334610\"></iframe>";
             encodedHtml= Base64.encodeToString(unencodedHtml.getBytes(), Base64.NO_PADDING);
             webViewMonoxido.getSettings().setJavaScriptEnabled(true);
             webViewMonoxido.loadData(encodedHtml, "text/html", "base64");
@@ -217,15 +217,15 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
             webViewLuminosidade.loadUrl("about:blank");
             webViewTempHum.loadUrl("about:blank");
 
-            String unencodedHtml2 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+            String unencodedHtml2 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
             String encodedHtml2 = Base64.encodeToString(unencodedHtml2.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml2, "text/html", "base64");
-            unencodedHtml2 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "\n" + "https://thingspeak.com/channels/1424295/widgets/337596" + " ></iframe>";
+            unencodedHtml2 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"\nhttps://thingspeak.com/channels/1424295/widgets/337596\"></iframe>";
             encodedHtml2 = Base64.encodeToString(unencodedHtml2.getBytes(), Base64.NO_PADDING);
             webViewTemperatura.getSettings().setJavaScriptEnabled(true);
             webViewTemperatura.loadData(encodedHtml2, "text/html", "base64");
-            unencodedHtml2 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/334643" + " ></iframe>";
+            unencodedHtml2 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/widgets/334643\"></iframe>";
             encodedHtml2= Base64.encodeToString(unencodedHtml2.getBytes(), Base64.NO_PADDING);
             webViewHumidadeAr.getSettings().setJavaScriptEnabled(true);
             webViewHumidadeAr.loadData(encodedHtml2, "text/html", "base64");
@@ -238,15 +238,15 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
             webViewLuminosidade.loadUrl("about:blank");
             webViewTempHum.loadUrl("about:blank");
 
-            String unencodedHtml4 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+            String unencodedHtml4 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
             String encodedHtml4 = Base64.encodeToString(unencodedHtml4.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml4, "text/html", "base64");
-            unencodedHtml4 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "\n" + " https://thingspeak.com/channels/1424295/widgets/337598" + " ></iframe>";
+            unencodedHtml4 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"\n https://thingspeak.com/channels/1424295/widgets/337598\"></iframe>";
             encodedHtml4 = Base64.encodeToString(unencodedHtml4.getBytes(), Base64.NO_PADDING);
             webViewTemperatura.getSettings().setJavaScriptEnabled(true);
             webViewTemperatura.loadData(encodedHtml4, "text/html", "base64");
-            unencodedHtml4 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/334645" + " ></iframe>";
+            unencodedHtml4 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/widgets/334645\"></iframe>";
             encodedHtml4= Base64.encodeToString(unencodedHtml4.getBytes(), Base64.NO_PADDING);
             webViewHumidadeAr.getSettings().setJavaScriptEnabled(true);
             webViewHumidadeAr.loadData(encodedHtml4, "text/html", "base64");
@@ -260,19 +260,19 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
             webViewLuminosidade.loadUrl("about:blank");
             webViewTempHum.loadUrl("about:blank");
 
-            String unencodedHtml5 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+            String unencodedHtml5 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
             String encodedHtml5 = Base64.encodeToString(unencodedHtml5.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml5, "text/html", "base64");
-            unencodedHtml5 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "\n" + "https://thingspeak.com/channels/1424295/widgets/337599" + " ></iframe>";
+            unencodedHtml5 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"\nhttps://thingspeak.com/channels/1424295/widgets/337599\"></iframe>";
             encodedHtml5 = Base64.encodeToString(unencodedHtml5.getBytes(), Base64.NO_PADDING);
             webViewTemperatura.getSettings().setJavaScriptEnabled(true);
             webViewTemperatura.loadData(encodedHtml5, "text/html", "base64");
-            unencodedHtml5 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/334646" + " ></iframe>";
+            unencodedHtml5 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/widgets/334646\"></iframe>";
             encodedHtml5= Base64.encodeToString(unencodedHtml5.getBytes(), Base64.NO_PADDING);
             webViewHumidadeAr.getSettings().setJavaScriptEnabled(true);
             webViewHumidadeAr.loadData(encodedHtml5, "text/html", "base64");
-            unencodedHtml5 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/widgets/337602" + " ></iframe>";
+            unencodedHtml5 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/widgets/337602\"></iframe>";
             encodedHtml5= Base64.encodeToString(unencodedHtml5.getBytes(), Base64.NO_PADDING);
             webViewMonoxido.getSettings().setJavaScriptEnabled(true);
             webViewMonoxido.loadData(encodedHtml5, "text/html", "base64");
@@ -286,7 +286,7 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
             webViewLuminosidade.loadUrl("about:blank");
             webViewTempHum.loadUrl("about:blank");
 
-            String unencodedHtml6 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1424295/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" + " ></iframe>";
+            String unencodedHtml6 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1424295/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15\"></iframe>";
             String encodedHtml6 = Base64.encodeToString(unencodedHtml6.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml6, "text/html", "base64");
@@ -301,7 +301,7 @@ public class GraphsFragment extends Fragment implements AdapterView.OnItemSelect
             webViewLuminosidade.loadUrl("about:blank");
             webViewTempHum.loadUrl("about:blank");
 
-            String unencodedHtml7 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/apps/matlab_visualizations/416492" + " ></iframe>";
+            String unencodedHtml7 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/apps/matlab_visualizations/416492\"></iframe>";
             String encodedHtml7 = Base64.encodeToString(unencodedHtml7.getBytes(), Base64.NO_PADDING);
             webView.getSettings().setJavaScriptEnabled(true);
             webView.loadData(encodedHtml7, "text/html", "base64");
