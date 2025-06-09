@@ -58,31 +58,31 @@ public class HomeFragment extends Fragment {
         jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
 
         webView = view.findViewById(R.id.thingspeak1);
-        String unencodedHtml = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1431133/widgets/334688" + " ></iframe>";
+        String unencodedHtml = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1431133/widgets/334688\"></iframe>";
         String encodedHtml = Base64.encodeToString(unencodedHtml.getBytes(), Base64.NO_PADDING);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadData(encodedHtml, "text/html", "base64");
 
         webView = view.findViewById(R.id.thingspeak2);
-        String unencodedHtml2 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1431133/widgets/334689" + " ></iframe>";
+        String unencodedHtml2 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1431133/widgets/334689\"></iframe>";
         String encodedHtml2 = Base64.encodeToString(unencodedHtml2.getBytes(), Base64.NO_PADDING);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadData(encodedHtml2, "text/html", "base64");
 
         webView = view.findViewById(R.id.thingspeak3);
-        String unencodedHtml3 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1431133/widgets/334690" + " ></iframe>";
+        String unencodedHtml3 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1431133/widgets/334690\"></iframe>";
         String encodedHtml3 = Base64.encodeToString(unencodedHtml3.getBytes(), Base64.NO_PADDING);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadData(encodedHtml3, "text/html", "base64");
 
         webView = view.findViewById(R.id.thingspeak4);
-        String unencodedHtml4 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1431133/widgets/334691" + " ></iframe>";
+        String unencodedHtml4 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1431133/widgets/334691\"></iframe>";
         String encodedHtml4 = Base64.encodeToString(unencodedHtml4.getBytes(), Base64.NO_PADDING);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadData(encodedHtml4, "text/html", "base64");
 
         webView = view.findViewById(R.id.thingspeak5);
-        String unencodedHtml5 = "<iframe width= " + width + " + height=" + height + " style='border: 5px solid #cccccc;' src=" + "https://thingspeak.com/channels/1431133/widgets/334692" + " ></iframe>";
+        String unencodedHtml5 = "<iframe width=\"" + width + "\" height=\"" + height + "\" style='border: 5px solid #cccccc;' src=\"https://thingspeak.com/channels/1431133/widgets/334692\"></iframe>";
         String encodedHtml5 = Base64.encodeToString(unencodedHtml5.getBytes(), Base64.NO_PADDING);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadData(encodedHtml5, "text/html", "base64");
